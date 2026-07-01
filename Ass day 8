@@ -1,0 +1,70 @@
+1.What are the Advantages and Disadvantages of White Box Testing?
+ Advantages :
+   1.Thorough Testing:
+      Throughout testing refers to the entire duration or every stage of the testing process, from planning and test case design to execution, defect reporting, retesting, and completion.
+   2.Code Optimization:
+      Identifies redundant, unused, or inefficient code, helping improve the program's performance and maintainability.
+   3.Early Detection of Defects:
+      Finds coding errors during the development phase, reducing the time and cost required to fix them later.
+   4.Integration with SDLC:
+      Can be performed alongside software development, allowing continuous testing throughout the Software Development Life Cycle (SDLC).
+   5.Detection of Complex Defects: 
+      Detects logical errors, incorrect conditions, hidden bugs, and security vulnerabilities that may not be visible through external testing.
+   6.Comprehensive Test Cases:
+      Enables the creation of test cases that cover statements, branches, loops, and execution paths, resulting in thorough code testing.
+ Disadvantages :
+   1.Programming Knowledge and Source Code Access:
+      White box testing requires testers to have programming knowledge and access to the application's source code, making it difficult for non-technical testers to perform.
+   2.Bias in Testing:
+      Testers who are familiar with the code may overlook defects or make assumptions, reducing the effectiveness of testing.
+   3.Test Case Overhead: 
+      Creating, maintaining, and updating detailed test cases requires significant time and effort, especially for large applications.
+   4.Dependency on Tester Expertise: 
+      The quality of testing depends on the tester's programming skills and understanding of the application's internal structure.
+   5.Inability to Detect Missing Functionalities:
+      White box testing verifies the implemented code but cannot identify missing features or incorrect requirements from the user's perspective.
+2.What is Statement Coverage and Path Coverage?
+    1.Statement Coverage
+
+       Definition:
+          Statement Coverage is a white box testing technique in which the objective is to execute every executable statement in a program at least once during testing.
+          It measures how much of the program's source code has been tested by ensuring that each line of executable code is executed. 
+          In terms of a flowchart, every statement (node) is traversed at least once.
+          This technique helps identify faulty, unused, or unreachable code and provides a basic measure of code coverage.
+
+       Key Points:
+
+          Ensures every executable statement is tested at least once.
+          Helps identify faulty or dead code.
+          Improves basic code coverage.
+          Easy to implement and requires fewer test cases.
+          Does not guarantee that all branches or execution paths are tested.
+    2.Basis Path Testing
+
+       Definition:
+          Basis Path Testing is a white box testing technique that identifies all independent execution paths in a program.
+          It uses a Control Flow Graph (CFG) and Cyclomatic Complexity to determine the minimum number of test cases required for complete path coverage. 
+          By testing each independent path at least once, it helps detect logical errors and ensures thorough testing of the program's control structure.
+
+       Steps in Basis Path Testing
+           Draw the Control Flow Graph (CFG) from the program or flowchart.
+           Calculate the Cyclomatic Complexity (V(G)).
+           Identify all independent paths in the control flow graph.
+           Design and execute one test case for each independent path.
+       Cyclomatic Complexity Formulae
+          V(G) = P + 1, where P is the number of predicate (decision) nodes.
+          V(G) = E – N + 2, where:
+          E = Number of edges
+          N = Number of nodes
+          V(G) = Number of non-overlapping (independent) regions in the control flow graph.
+       Advantages
+           Ensures all independent execution paths are tested.
+           Helps detect logical and control-flow errors.
+           Determines the minimum number of test cases needed.
+           Improves code coverage and software reliability.
+           Identifies unreachable code and redundant paths
+       Disadvantages
+          Difficult to apply to very large or complex programs.
+          Creating the Control Flow Graph can be time-consuming.
+          The number of paths increases rapidly with program complexity.
+          Requires knowledge of the program's internal code structure.
